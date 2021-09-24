@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: #06074e;
+}
+
 /* .MaterialForm {
   height: calc(100vh - 60px);
   display: flex;
@@ -71,6 +76,17 @@ code {
   width: 50%;
   background: rgba(255, 255, 255, 0.304);
   padding: 20px;
+}
+
+@media (max-width: 450px) {
+  .bg-home .wrapper .content > form {
+    width: 75%;
+  }
+  
+  .psignin {
+    text-align: center;
+    padding: 5%;
+  }
 }
 
 

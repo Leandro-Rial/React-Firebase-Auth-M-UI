@@ -1,12 +1,13 @@
 import React from 'react';
-import { AuthProvider } from './context/AuthContext';
-import AppRouter from './router/AppRouter';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './utils/themeConfig';
+import ContainerApp from './components/ContainerApp';
 
 function App() {
   return (
-      <AuthProvider>
-        <AppRouter />
-      </AuthProvider>
+    <ThemeProvider theme={theme}>
+      <ContainerApp />
+    </ThemeProvider>
   );
 }
 

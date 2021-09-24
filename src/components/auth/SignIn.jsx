@@ -3,7 +3,7 @@ import { Button, Box, TextField, Typography } from "@material-ui/core";
 import { Field, Form, Formik } from "formik";
 import { Link, useHistory } from "react-router-dom";
 import * as Yup from "yup";
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import Swal from 'sweetalert2';
 
 const SignIn = () => {
@@ -63,7 +63,7 @@ const SignIn = () => {
               handleSubmit,
             }) => (
               <>
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} className="animate__animated animate__fadeIn">
                   <Box sx={{ mb: 3 }}>
                     <Typography color="textPrimary" variant="h2">
                       Sign In
@@ -111,7 +111,7 @@ const SignIn = () => {
                   </Button>
                 </Form>
                 <Box sx={{ mb: 3 }}>
-                  <Typography color="textPrimary" variant="body1">
+                  <Typography color="textPrimary" variant="body1" className="psignin">
                     Do you haven't an account? create one{" "}
                     <Link to="signup">Sign Up</Link>
                   </Typography>
